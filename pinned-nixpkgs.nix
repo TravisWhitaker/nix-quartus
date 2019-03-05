@@ -12,7 +12,7 @@ let fetcher = { owner
     {
         owner = "nixos";
         repo = "nixpkgs-channels";
-        rev = "cb0e20d6db96fe09a501076c7a2c265359982814";
-        sha256 = "0d9pkbax0phh392j6pzkn365wbsgd0h1cmm58rwq8zf9lb0pgkg2";
+        rev = "95fed28ac372c61eb83c87ad97c24b0f957827bf";
+        sha256 = "03jdb28khdm45gzwl7wvcb7h10yb6y45s7ds8bhlfk9a8phzj4hx";
     };
 in import nixpkgs-src {}
