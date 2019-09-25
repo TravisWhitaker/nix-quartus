@@ -767,7 +767,7 @@ in rec {
     recurseForDerivations = true;
     version = "18.1.0.625";
     is32bitPackage = false;
-    baseUrl = "http://download.altera.com/akdlm/software/acdsinst/17.1std/590/ib_installers";
+    baseUrl = "http://download.altera.com/akdlm/software/acdsinst/18.1std/625/ib_installers";
 
     lite_edition = {
       recurseForDerivations = true;
