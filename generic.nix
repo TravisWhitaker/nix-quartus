@@ -2,7 +2,7 @@
 , nukeReferences, glibcLocales, libfaketime, coreutils, gnugrep, gnused, proot
 # Runtime dependencies
 , zlib, glib, libpng12, freetype, libSM, libICE, libXrender, fontconfig
-, libXext, libX11, libXtst, gtk2, bzip2, libelf
+, libXext, libX11, libXtst, gtk2, bzip2, libelf, libXi
 }:
 
 { baseName
@@ -68,6 +68,7 @@ let
         pkgsi686Linux.xorg.libXrender pkgsi686Linux.fontconfig.lib
         pkgsi686Linux.xorg.libXext pkgsi686Linux.xorg.libX11 pkgsi686Linux.xorg.libXtst
         pkgsi686Linux.gtk2 pkgsi686Linux.bzip2.out pkgsi686Linux.libelf
+        pkgsi686Linux.xorg.libXi
         pkgsi686Linux.stdenv.cc.cc.lib
       ];
 
@@ -75,7 +76,7 @@ let
   runtimeLibPath64 =
     stdenv.lib.makeLibraryPath
     [ zlib glib libpng12 freetype libSM libICE libXrender fontconfig.lib
-      libXext libX11 libXtst gtk2 bzip2.out libelf
+      libXext libX11 libXtst gtk2 bzip2.out libelf libXi
       stdenv.cc.cc.lib
     ];
 
