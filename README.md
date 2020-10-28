@@ -13,7 +13,7 @@ Simply import the top-level expression for the desired Quartus version. For
 example, to build the Lite Edition of Quartus Prime 18:
 
 ```
-$ nix build "(import ./lite18.nix)"
+$ nix-build -E "(import ./lite18.nix)"
 ```
 
 To install the same version:

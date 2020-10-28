@@ -3,7 +3,7 @@
 , requireFile
 # Runtime libraries:
 , zlib, glib, libpng12, freetype, libSM, libICE, libXrender, fontconfig
-, libXext, libX11, libXtst, gtk2, bzip2, libelf
+, libXext, libX11, libXtst, gtk2, bzip2, libelf, libXi
 }:
 
 let
@@ -16,7 +16,7 @@ let
       nukeReferences glibcLocales libfaketime coreutils gnugrep gnused proot
       # Runtime libraries:
       zlib glib libpng12 freetype libSM libICE libXrender fontconfig
-      libXext libX11 libXtst gtk2 bzip2 libelf;
+      libXext libX11 libXtst gtk2 bzip2 libelf libXi;
   };
 
   mkCommonQuartus = srcAttrs:
